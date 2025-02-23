@@ -1,0 +1,21 @@
+title:             Mi primera web
+email:             lucho.salas@educa.madrid.org
+description:       Mis trabajos
+author:            Lucho
+#url:               "localhost:4000"
+url:               "https://noestadisponible.github.io/"
+baseurl:           ""
+
+# Social Profiles 
+#twitter_username:  SBootstrap
+#github_username:   BlackrockDigital
+#facebook_username: StartBootstrap
+
+# Build settings
+markdown:          kramdown
+paginate:          10
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
