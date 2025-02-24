@@ -3,7 +3,7 @@ layout: post
 title: "Mi Primer Post"
 subtitle: "Inicio de mi blog"
 date: 2024-02-25
-background: "/assets/images/mi-imagen.jpg"
+background: https://cdna.artstation.com/p/assets/images/images/004/560/916/large/dominik-mayer-redmoon.jpg
 categories: blog
 tags: [introducción, tecnología]
 ---
