@@ -1,23 +1,21 @@
 ---
-title: Recurrence
+title: Automatización de Tareas con Scripts
 background: https://cdnb.artstation.com/p/assets/images/images/007/095/957/large/mark-chang-lab3.jpg
 layout: post
-subtitle: A minion breaks the code
+subtitle: Cómo los scripts pueden hacer tu trabajo más fácil
 artist: artstation.com/equinoz
 ---
 
-They work all day, they work all night.
-<br/>They look at you, they send you thoughts.
-<br/>They just want to see you think.
-<br/>They want to know what goes on in that little brain of yours when the spark happens.
+La automatización es clave en la administración de sistemas modernos.  
+Un buen script puede **ahorrar horas de trabajo manual** y reducir errores humanos.
 
-Why, we don't know; but we do know that it's important for them.
-<br/>They work all the time relentlessly, not a mistake made because it's simply not in their design.
+### 🚀 Beneficios de la Automatización:
+1. **Ejecutar tareas repetitivas sin intervención**.
+2. **Monitorizar servidores y servicios en tiempo real**.
+3. **Optimizar flujos de trabajo** con herramientas como Bash y Python.
 
-But every now and then, when the chief turns out of phase, an impish minion picks a memory from a run that already happened and feeds it back to you.
-<br/>That crazy bugger just likes to watch you freak out.
-<br/>He looks at your brain with awe, the way the alarms go haywire inside.
-
-What has he done!
-<br/>He just likes to tip us off, and watch us remain helpless.
-<br/>That little devil likes that fleeting anguish the barrage of cross firing neurons cause.
+### 📝 Ejemplo: Script en Bash para monitorear procesos activos
+```bash
+#!/bin/bash
+echo "Procesos en ejecución:"
+ps aux --sort=-%cpu | head -n 10

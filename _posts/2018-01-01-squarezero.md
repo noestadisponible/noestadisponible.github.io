@@ -10,9 +10,10 @@ tags: [introducción, tecnología]
 
 Bienvenido a mi blog. Aquí compartiré mis experiencias y aprendizajes sobre tecnología y desarrollo.
 
-## 🚀 Lo que encontrarás en este blog:
-- Programación y automatización con Python y Bash.
-- Seguridad informática y administración de servidores.
-- Proyectos personales y recursos útiles.
+### 🚀 ¿De qué tratará este blog?
+- **Programación y automatización** con Python y Bash.
+- **Seguridad informática**: redes, cifrado, VPNs y más.
+- **Proyectos personales** en los que estoy trabajando.
 
-¡Espero que lo disfrutes!
+Este es un espacio donde compartiré soluciones, errores y descubrimientos. ¡Espero que lo disfrutes! 🚀
+
