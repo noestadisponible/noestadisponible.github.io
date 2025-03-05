@@ -1,18 +1,22 @@
 ---
-layout: default
-title: "Sobre Mí"
-background: "{{ site.baseurl }}/img/bg-about.jpg"
-permalink: /pagina2/
+layout: examen
+title: "Listado de Alumnos"
+permalink: /examen/alumnos.html
 ---
 
-<div class="container">
-    <h1>Sobre Mí</h1>
-    <p>Soy un apasionado de la tecnología y el desarrollo de software.</p>
-    <p>Mis intereses incluyen:</p>
-    <ul>
-        <li>🔹 Programación en Python, Bash y SQL.</li>
-        <li>🔹 Administración de servidores y redes virtuales.</li>
-        <li>🔹 Configuración de sistemas de seguridad.</li>
-    </ul>
-    <p>Encuéntrame en <a href="https://github.com/noestadisponible">GitHub</a> o <a href="https://www.linkedin.com/in/luchopaul">LinkedIn</a>.</p>
-</div>
+<h1>Lista de Alumnos</h1>
+<ul id="lista-alumnos"></ul>
+
+<script>
+    fetch("alumnos.json")
+        .then(response => response.json())
+        .then(data => {
+            const lista = document.getElementById("lista-alumnos");
+            data.alumnos.forEach(alumno => {
+                let li = document.createElement("li");
+                li.textContent = `${alumno.nombre} ${alumno.apellido}`;
+                lista.appendChild(li);
+            });
+        })
+        .catch(error => console.error("Error al cargar los alumnos:", error));
+</script>
