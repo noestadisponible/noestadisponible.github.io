@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-
 <html>
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
+<body style="background-image: url('{% if page.background %}{{ page.background }}{% else %}{{ site.baseurl }}/img/bg-index.jpg{% endif %}');
+             background-size: cover;
+             background-position: center;">
 
     {% include navbar.html %}
 
-    {{ content }}
+    <main>
+        {{ content }}
+    </main>
 
     {% include footer.html %}
-
     {% include scripts.html %}
-
-  </body>
-
+</body>
 </html>
+
