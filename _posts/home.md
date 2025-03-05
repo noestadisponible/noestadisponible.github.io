@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 title: "Bienvenido a Mi Página Personal"
 permalink: /
 ---

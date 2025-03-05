@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Mi Primer Post"
 subtitle: "Inicio de mi blog"
 date: 2024-02-25
