@@ -1,6 +1,6 @@
 ---
 title: La Revolución Digital
-layout: post
+layout: blog
 background: https://cdna.artstation.com/p/assets/images/images/002/187/704/large/teun-van-der-zalm-ncu001-13d.jpg
 subtitle: De la era analógica a la inteligencia artificial
 artist: artstation.com/teunvanderzalm
