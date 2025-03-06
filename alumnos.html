@@ -15,7 +15,7 @@ form: true
             const lista = document.getElementById("lista-alumnos");
             data.alumnos.forEach(alumno => {
                 let li = document.createElement("li");
-                li.textContent = `${alumno.nombre} ${alumno.apellido}`;
+                li.textContent = `${alumno.nombre} ${alumno.nota1} ${alumno.nota2} ${alumno.nota3}`;
                 lista.appendChild(li);
             });
         })
