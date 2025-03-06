@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Proyectos"
+background: '/img/bg-contact.jpg'
+permalink: /proyectos/
+---
+
+<!-- hospitales.html -->
+{% extends "base.html" %}
+{% block title %}Lista de alumnos{% endblock %}
+{% block content %}
+    <h2>Lista de alumnos</h2>
+    <form method="get">
+        <label for="id">Filtrar por alumnos:</label>
+        <input type="number" name="id" value="{{ alumnos.id }}">
+        <button type="submit">Filtrar</button>
+    </form>
+    <ul>
+        {% for alumno in alumnos %}
+        <li>{{ alumno.id }}  {{ alumno.nombre }} {{ alumno.nota1}} {{ alumno.nota2}} {{ alumno.nota3}}</li>
+
+        {% endfor %}
+    </ul>
+{% endblock %}

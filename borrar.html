@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Proyectos"
+background: '/img/bg-contact.jpg'
+permalink: /proyectos/
+---
+
+<!-- borrar.html -->
+{% extends "base.html" %}
+{% block title %}Borrar alumno{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/static/css/amarillo.css">
+    <h2>Borrar alumno</h2>
+    <form method="post" action="/borrar">
+        <label for="alumno_id">Seleccionar alumno:</label>
+        <select name="alumno_id">
+            {% for alumno in alumnos %}
+                <option value="{{ alumno.id }}">{{ alumno.nombre }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Borrar</button>
+    </form>
+{% endblock %}
+
+

@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Proyectos"
+background: '/img/bg-contact.jpg'
+permalink: /proyectos/
+---
+
+<!-- agregar.html -->
+{% extends "base.html" %}
+{% block title %}Agregar alumno{% endblock %}
+{% block content %}
+    <h2>Agregar alumnos</h2>
+    <form method="post" action="/agregar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label for="nota1">Nota 1:</label>
+        <input type="number" name="nota1" required>
+        <button type="submit">Agregar</button>
+        <label for="nota2">Nota 2:</label>
+        <input type="number" name="nota2" required>
+        <button type="submit">Agregar</button>
+        <label for="nota3">Nota 3:</label>
+        <input type="number" name="nota3" required>
+        <button type="submit">Agregar</button>
+    </form>
+{% endblock %}
+
+

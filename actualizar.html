@@ -1,0 +1,30 @@
+---
+layout: page
+title: "Proyectos"
+background: '/img/bg-contact.jpg'
+permalink: /proyectos/
+---
+
+<!-- actualizar.html -->
+{% extends "base.html" %}
+{% block title %}Actualizar alumnos{% endblock %}
+{% block content %}
+    <h2>Actualizar alumno</h2>
+    <form method="post" action="/actualizar">
+        <label for="alumno_id">Seleccionar alumno:</label>
+        <select name="alumno_id">
+            {% for alumno in alumnos %}
+                <option value="{{ alumno.id }}">{{ alumno.nombre }}</option>
+            {% endfor %}
+        </select>
+        <label for="nota1">Nueva nota 1:</label>
+        <input type="number" name="nota1" required>
+        <button type="submit">Actualizar</button>
+        <label for="nota2">Nueva nota 2:</label>
+        <input type="number" name="nota2" required>
+        <button type="submit">Actualizar</button>
+        <label for="nota3">Nueva nota 3:</label>
+        <input type="number" name="nota3" required>
+        <button type="submit">Actualizar</button>
+    </form>
+{% endblock %}
